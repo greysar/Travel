@@ -1,3 +1,4 @@
+// Magra
 @font-face {
   font-family: "Magra";
   src: url("/assets/fonts/magra/Magra-Bold.woff2") format("woff2"),
@@ -14,10 +15,28 @@
   font-weight: 400;
 }
 
+// Red Hat Text
 @font-face {
   font-family: "Red Hat Text";
   src: url("/assets/fonts/RedHatText/RedHatText.woff2") format("woff2"),
     url("/assets/fonts/RedHatText/RedHatText.woff") format("woff"),
     url("/assets/fonts/RedHatText/RedHatText.ttf") format("ttf");
   font-weight: 500;
+}
+
+// Aleo
+@font-face {
+  font-family: "Aleo";
+  src: url("/assets/fonts/Aleo/Aleo-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Aleo/Aleo-Bold.woff") format("woff"),
+    url("/assets/fonts/Aleo/Aleo-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("/assets/fonts/Aleo/Aleo-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Aleo/Aleo-Regular.woff") format("woff"),
+    url("/assets/fonts/Aleo/Aleo-Regular.ttf") format("ttf");
+  font-weight: 400;
 }

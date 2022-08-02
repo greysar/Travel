@@ -1,0 +1,69 @@
+.preview__block {
+  width: 55.75rem;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+}
+
+.preview {
+  font-family: $font-group-3;
+}
+
+.preview__title {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6rem;
+  color: $color-white;
+  text-shadow: 0.13rem 0.19rem 0.19rem rgba($color-black, 0.7);
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.preview__description {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0056rem;
+  color: $color-white;
+  text-shadow: 0.06rem 0.13rem 0.13rem rgba($color-black, 0.7);
+  margin: 0;
+  margin-bottom: 2.875rem;
+}
+
+.preview__form {
+  position: relative;
+
+  & input[type="text"] {
+    width: 55.75rem;
+    height: 5.9375rem;
+    background-color: rgba($color-white, 0.7);
+    border: none;
+    border-radius: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: $color-orange;
+    padding: 0 18.1875rem 0 2.56rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-orange;
+      letter-spacing: -0.0375rem;
+    }
+  }
+
+  & input[type="submit"] {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border: none;
+    padding: 0.84375rem 2.03121rem;
+    position: absolute;
+    top: 1.125rem;
+    right: 1.125rem;
+  }
+}

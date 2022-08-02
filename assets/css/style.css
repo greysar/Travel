@@ -1,9 +1,13 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .container {
-  width: 1440px;
+  width: 90rem;
   margin: 0 auto;
 }
 
@@ -26,34 +30,51 @@ a {
   src: url("/assets/fonts/RedHatText/RedHatText.woff2") format("woff2"), url("/assets/fonts/RedHatText/RedHatText.woff") format("woff"), url("/assets/fonts/RedHatText/RedHatText.ttf") format("ttf");
   font-weight: 500;
 }
+@font-face {
+  font-family: "Aleo";
+  src: url("/assets/fonts/Aleo/Aleo-Bold.woff2") format("woff2"), url("/assets/fonts/Aleo/Aleo-Bold.woff") format("woff"), url("/assets/fonts/Aleo/Aleo-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("/assets/fonts/Aleo/Aleo-Regular.woff2") format("woff2"), url("/assets/fonts/Aleo/Aleo-Regular.woff") format("woff"), url("/assets/fonts/Aleo/Aleo-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
 .header__button {
   border: none;
   outline: none;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.13rem 0.13rem rgba(0, 0, 0, 0.25);
 }
 
 .btn {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.3125rem;
   font-family: "Red Hat Text", sans-serif;
   background-color: #0d606f;
   color: #ffffff;
   cursor: pointer;
-  padding: 10px 30px;
-  border-radius: 10px;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.625rem;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #f2785c;
+  box-shadow: 0 0 0.3rem #ffffff;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .first-screen {
-  height: 765px;
+  height: 47.8125rem;
   background: url("/assets/images/first-screen_bg.webp") no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .header {
-  height: 90px;
+  height: 5.625rem;
   background-color: rgba(242, 120, 92, 0.7);
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(13, 96, 111, 0.5);
   user-select: none;
 }
 
@@ -62,30 +83,34 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 120px;
+  padding: 0 7.5rem;
 }
 
 .header__logo {
-  width: 216px;
-  height: 41px;
+  width: 13.5rem;
+  height: 2.5625rem;
+}
+.header__logo img {
+  width: 1.875rem;
+  height: 1.875rem;
 }
 .header__logo span {
   font-family: "Magra", sans-serif;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 2rem;
+  line-height: 2.4375rem;
   color: #ffffff;
-  padding-left: 3px;
+  padding-left: 0.1875rem;
 }
 
 .header__nav {
-  margin-right: 196px;
+  margin-right: 12.25rem;
   margin-left: auto;
 }
 
 .nav__list {
-  width: 527px;
-  height: 21px;
+  width: 32.9375rem;
+  height: 1.3125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +124,73 @@ a {
   transition: 0.3s;
 }
 .nav__link:hover {
-  text-shadow: 1px 2px rgba(13, 96, 111, 0.7);
+  text-shadow: 0.0625rem 0.125rem rgba(13, 96, 111, 0.7);
+}
+
+.preview__block {
+  width: 55.75rem;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+}
+
+.preview {
+  font-family: "Aleo", sans-serif;
+}
+
+.preview__title {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #ffffff;
+  text-shadow: 0.13rem 0.19rem 0.19rem rgba(0, 0, 0, 0.7);
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.preview__description {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0056rem;
+  color: #ffffff;
+  text-shadow: 0.06rem 0.13rem 0.13rem rgba(0, 0, 0, 0.7);
+  margin: 0;
+  margin-bottom: 2.875rem;
+}
+
+.preview__form {
+  position: relative;
+}
+.preview__form input[type=text] {
+  width: 55.75rem;
+  height: 5.9375rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  color: #f2785c;
+  padding: 0 18.1875rem 0 2.56rem;
+}
+.preview__form input[type=text]:focus {
+  outline: none;
+}
+.preview__form input[type=text]::placeholder {
+  color: #f2785c;
+  letter-spacing: -0.0375rem;
+}
+.preview__form input[type=submit] {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border: none;
+  padding: 0.84375rem 2.03121rem;
+  position: absolute;
+  top: 1.125rem;
+  right: 1.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */

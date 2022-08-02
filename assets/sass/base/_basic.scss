@@ -2,20 +2,24 @@
 $color-black: #000000;
 $color-white: #ffffff;
 $color-sia: #0d606f;
-$color-header: #f2785c;
+$color-orange: #f2785c;
 
 // Fonts
 
 $font-group-1: 'Magra', sans-serif;
 $font-group-2: 'Red Hat Text', sans-serif;
+$font-group-3: 'Aleo', sans-serif;
 
+:root {
+    font-size: 16px;
+}
 
 * {
     box-sizing: border-box;
 }
 
 .container {
-  width: 1440px;
+  width: 90rem;
   margin: 0 auto;
 }
 
