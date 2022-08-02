@@ -1,0 +1,25 @@
+//Colors
+$color-black: #000000;
+$color-white: #ffffff;
+$color-sia: #0d606f;
+$color-header: #f2785c;
+
+// Fonts
+
+$font-group-1: 'Magra', sans-serif;
+$font-group-2: 'Red Hat Text', sans-serif;
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+}

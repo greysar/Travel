@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Magra";
+  src: url("/assets/fonts/magra/Magra-Bold.woff2") format("woff2"),
+    url("/assets/fonts/magra/Magra-Bold.woff") format("woff"),
+    url("/assets/fonts/magra/Magra-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Magra";
+  src: url("/assets/fonts/magra/Magra-Regular.woff2") format("woff2"),
+    url("/assets/fonts/magra/Magra-Regular.woff") format("woff"),
+    url("/assets/fonts/magra/Magra-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("/assets/fonts/RedHatText/RedHatText.woff2") format("woff2"),
+    url("/assets/fonts/RedHatText/RedHatText.woff") format("woff"),
+    url("/assets/fonts/RedHatText/RedHatText.ttf") format("ttf");
+  font-weight: 500;
+}

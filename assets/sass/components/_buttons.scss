@@ -1,0 +1,17 @@
+.header__button {
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 3px rgba($color-black, 0.25);
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: $font-group-2;
+  background-color: $color-sia;
+  color: $color-white;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
