@@ -64,6 +64,17 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.block-title {
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3.3125rem;
+  text-transform: uppercase;
+  color: #f2785c;
+  margin: 0;
+}
+
 .first-screen {
   height: 47.8125rem;
   background: url("/assets/images/first-screen_bg.webp") no-repeat;
@@ -191,6 +202,67 @@ a {
   position: absolute;
   top: 1.125rem;
   right: 1.125rem;
+}
+
+.steps__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 8.1875rem 6.0625rem;
+}
+
+.steps__title {
+  margin-bottom: 2.5rem;
+}
+
+.steps__icons-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon__icon-item {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: #f2785c;
+  border-radius: 1rem;
+  margin-bottom: 1.875rem;
+}
+
+.icon__title {
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #0d606f;
+}
+
+.velo-icon {
+  background-image: url("/assets/icons/velo-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.calc-icon {
+  background-image: url("/assets/icons/calc-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hand-icon {
+  background-image: url("/assets/icons/hand-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
