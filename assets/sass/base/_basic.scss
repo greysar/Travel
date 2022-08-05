@@ -6,16 +6,16 @@ $color-orange: #f2785c;
 
 // Fonts
 
-$font-group-1: 'Magra', sans-serif;
-$font-group-2: 'Red Hat Text', sans-serif;
-$font-group-3: 'Aleo', sans-serif;
+$font-group-1: "Magra", sans-serif;
+$font-group-2: "Red Hat Text", sans-serif;
+$font-group-3: "Aleo", sans-serif;
 
 :root {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -23,7 +23,6 @@ $font-group-3: 'Aleo', sans-serif;
   margin: 0 auto;
 }
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

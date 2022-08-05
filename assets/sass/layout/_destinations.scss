@@ -1,0 +1,43 @@
+.destinations__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.destinations__title {
+  margin-bottom: 2.875rem;
+}
+
+.destinations__link {
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+  line-height: 1.98rem;
+  position: relative;
+  padding: 0.84375rem 1.94rem;
+  padding-left: 5.0625rem;
+  transition: 0.3s;
+  &::before {
+    width: 2.5rem;
+    height: 2.5rem;
+    content: "";
+    background: url("/assets/icons/bi_arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    left: 1.9375rem;
+  }
+
+  &.destinations__link:hover {
+    &::before {
+      filter: brightness(30%) grayscale(100%);
+    }
+  }
+}
+
+.destinations__slider {
+  margin-bottom: 2.5rem;
+}

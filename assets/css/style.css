@@ -230,6 +230,11 @@ a {
   align-items: center;
 }
 
+.central-icon {
+  margin-right: 10rem;
+  margin-left: auto;
+}
+
 .icon__icon-item {
   width: 6.25rem;
   height: 6.25rem;
@@ -251,18 +256,126 @@ a {
   background-image: url("/assets/icons/velo-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.125rem 2.8125rem;
 }
 
 .calc-icon {
   background-image: url("/assets/icons/calc-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.25rem 3.25rem;
 }
 
 .hand-icon {
   background-image: url("/assets/icons/hand-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.75rem 2.8125rem;
+}
+
+.destinations__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.destinations__title {
+  margin-bottom: 2.875rem;
+}
+
+.destinations__link {
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+  line-height: 1.98rem;
+  position: relative;
+  padding: 0.84375rem 1.94rem;
+  padding-left: 5.0625rem;
+  transition: 0.3s;
+}
+.destinations__link::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  content: "";
+  background: url("/assets/icons/bi_arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  left: 1.9375rem;
+}
+.destinations__link.destinations__link:hover::before {
+  filter: brightness(30%) grayscale(100%);
+}
+
+.destinations__slider {
+  margin-bottom: 2.5rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__image-block {
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+  flex-wrap: nowrap;
+  margin-bottom: 1.5rem;
+}
+
+.slider__card {
+  width: 50rem;
+  height: 50rem;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.slider__card-title {
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  left: 0.9375rem;
+  bottom: 2.5rem;
+}
+
+.slider__navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.slider__navigation-item {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #f2785c;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slider__navigation-item:hover {
+  opacity: 0.8;
+}
+
+.active {
+  opacity: 1;
+}
+.active:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

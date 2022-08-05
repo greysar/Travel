@@ -27,6 +27,11 @@
   align-items: center;
 }
 
+.central-icon {
+  margin-right: 10rem;
+  margin-left: auto;
+}
+
 .icon__icon-item {
   width: 6.25rem;
   height: 6.25rem;
@@ -48,16 +53,19 @@
   background-image: url("/assets/icons/velo-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.125rem 2.8125rem;
 }
 
 .calc-icon {
   background-image: url("/assets/icons/calc-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.25rem 3.25rem;
 }
 
 .hand-icon {
   background-image: url("/assets/icons/hand-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 3.75rem 2.8125rem;
 }
