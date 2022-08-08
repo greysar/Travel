@@ -45,8 +45,8 @@ a {
   top: calc(50% - 1.25rem);
   left: 1.9375rem;
 }
-.destinations__link.btn:hover::before {
-  filter: brightness(30%) grayscale(100%);
+.stories__link-more.btn:hover::before, .destinations__link.btn:hover::before {
+  filter: brightness(25%) grayscale(100%);
 }
 
 @font-face {

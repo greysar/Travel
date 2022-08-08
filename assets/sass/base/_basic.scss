@@ -36,7 +36,7 @@ $font-group-3: "Aleo", sans-serif;
   margin: 0;
 }
 
-%open-more {
+%open-more-btn {
   border-radius: 0.625rem;
   font-size: 1.5rem;
   line-height: 1.98rem;
@@ -57,9 +57,9 @@ $font-group-3: "Aleo", sans-serif;
     left: 1.9375rem;
   }
 
-  &.destinations__link:hover {
+  &:hover {
     &::before {
-      filter: brightness(30%) grayscale(100%);
+      filter: brightness(25%) grayscale(100%);
     }
   }
 }
