@@ -15,6 +15,40 @@ a {
   text-decoration: none;
 }
 
+.story__link, .story__description {
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #0d606f;
+  margin: 0;
+}
+
+.stories__link-more.btn, .destinations__link.btn {
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+  line-height: 1.98rem;
+  position: relative;
+  padding: 0.84375rem 1.94rem;
+  padding-left: 5.0625rem;
+  transition: 0.3s;
+}
+.stories__link-more.btn::before, .destinations__link.btn::before {
+  width: 2.5rem;
+  height: 2.5rem;
+  content: "";
+  background: url("/assets/icons/bi_arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  left: 1.9375rem;
+}
+.destinations__link.btn:hover::before {
+  filter: brightness(30%) grayscale(100%);
+}
+
 @font-face {
   font-family: "Magra";
   src: url("/assets/fonts/magra/Magra-Bold.woff2") format("woff2"), url("/assets/fonts/magra/Magra-Bold.woff") format("woff"), url("/assets/fonts/magra/Magra-Bold.ttf") format("ttf");
@@ -73,6 +107,15 @@ a {
   text-transform: uppercase;
   color: #f2785c;
   margin: 0;
+}
+
+.story__title {
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 2.625rem;
+  color: #0d606f;
 }
 
 .first-screen {
@@ -273,6 +316,10 @@ a {
   background-size: 3.75rem 2.8125rem;
 }
 
+.destinations {
+  padding-bottom: 5rem;
+}
+
 .destinations__wrapper {
   display: flex;
   flex-direction: column;
@@ -283,31 +330,6 @@ a {
 
 .destinations__title {
   margin-bottom: 2.875rem;
-}
-
-.destinations__link {
-  border-radius: 0.625rem;
-  font-size: 1.5rem;
-  line-height: 1.98rem;
-  position: relative;
-  padding: 0.84375rem 1.94rem;
-  padding-left: 5.0625rem;
-  transition: 0.3s;
-}
-.destinations__link::before {
-  width: 2.5rem;
-  height: 2.5rem;
-  content: "";
-  background: url("/assets/icons/bi_arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: calc(50% - 1.25rem);
-  left: 1.9375rem;
-}
-.destinations__link.destinations__link:hover::before {
-  filter: brightness(30%) grayscale(100%);
 }
 
 .destinations__slider {
@@ -376,6 +398,73 @@ a {
 }
 .active:hover {
   opacity: 1;
+}
+
+.stories__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stories__title {
+  margin-bottom: 2.5rem;
+}
+
+.stories__items-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  background-image: url("/assets/images/boat.webp");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  padding: 2.5rem 7.5rem;
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.story:not(:last-of-type) {
+  margin-bottom: 1.875rem;
+}
+
+.story__image {
+  width: 25rem;
+  height: 15.625rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px rgba(13, 96, 111, 0.9);
+  margin-right: 2.5rem;
+}
+
+.story__details {
+  padding-bottom: 1rem;
+}
+
+.story__title {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.story__description {
+  font-weight: 400;
+}
+
+.story__link {
+  font-weight: 700;
+  text-decoration-line: underline;
+  transition: 0.3s;
+}
+.story__link:hover {
+  color: #f2785c;
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.stories__link-more.btn {
+  margin-top: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
